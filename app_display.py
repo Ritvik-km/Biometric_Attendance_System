@@ -1,3 +1,19 @@
+"""
+LEGACY MONOLITHIC VERSION - app_display.py
+===========================================
+This is the original monolithic implementation of the Biometric Attendance System.
+
+For the new microservices architecture, please use:
+- main_app.py (main application entry point)
+- database_service.py (database operations)
+- face_recognition_service.py (face recognition logic)
+- admin_service.py (admin management)
+- attendance_service.py (attendance operations)
+
+The microservices architecture provides better separation of concerns,
+easier maintenance, and more modular code structure.
+===========================================
+"""
 import tkinter as tk
 import os
 import sys
@@ -16,8 +32,6 @@ from tkinter import filedialog
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from dotenv import load_dotenv
-
-from refactored_project import database
 
 load_dotenv()
 
